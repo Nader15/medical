@@ -101,14 +101,14 @@ class Announcements extends StatelessWidget {
                                     children: [
                                       SvgPicture.asset(
                                         "images/heart.svg",
-                                        color: Colors.grey,
+                                        color: greyColor,
                                         width: 22,
                                         height: 22,
                                       ),
                                       SizedBox(width: 5,),
                                       Text(
                                         "130",
-                                        style: TextStyle(color: Colors.grey),
+                                        style: TextStyle(color: greyColor),
                                       )
                                     ],
                                   ),
@@ -118,12 +118,12 @@ class Announcements extends StatelessWidget {
                                     children: [
                                       Icon(
                                         Icons.access_time,
-                                        color: Colors.grey,
+                                        color:greyColor,
                                       ),
                                       SizedBox(width: 5,),
                                       Text(
                                         "20m",
-                                        style: TextStyle(color: Colors.grey),
+                                        style: TextStyle(color: greyColor),
                                       )
                                     ],
                                   ),
@@ -235,7 +235,6 @@ class Announcements extends StatelessWidget {
                     height: 300,
                     width: 330,
                     decoration: BoxDecoration(
-                        color: Colors.red,
                         borderRadius: BorderRadius.circular(20),
                         image: DecorationImage(
                             image: AssetImage("images/patient.jpg"), fit: BoxFit.cover)),
@@ -245,7 +244,7 @@ class Announcements extends StatelessWidget {
                           opacity: 0.5,
                           child: Container(
                               decoration: BoxDecoration(
-                                color: Colors.teal,
+                                color: tealColor,
                                 borderRadius: BorderRadius.circular(20),
                               )),
                         ),
@@ -370,7 +369,7 @@ class Announcements extends StatelessWidget {
                                                 height: 100,
                                                 decoration: BoxDecoration(
                                                     shape: BoxShape.circle,
-                                                    color: Colors.teal
+                                                    color: tealColor
                                                 ),
                                               ),
                                             ),
@@ -383,7 +382,7 @@ class Announcements extends StatelessWidget {
                                                     color: Colors.white
                                                 ),
                                                 child: Center(
-                                                  child: Text("$percentage%",style: TextStyle(fontSize: 20,color: Colors.orange),),
+                                                  child: Text("$percentage%",style: TextStyle(fontSize: 20,color: orangeColor),),
                                                 ),
                                               ),
                                             ),

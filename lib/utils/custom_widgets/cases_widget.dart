@@ -36,7 +36,7 @@ class Cases extends StatelessWidget {
                           opacity: 0.5,
                           child: Container(
                               decoration: BoxDecoration(
-                                color: Colors.teal,
+                                color: tealColor,
                                 borderRadius: BorderRadius.circular(20),
                               )),
                         ),
@@ -122,67 +122,75 @@ class Cases extends StatelessWidget {
                                     width: 10,
                                   ),
                                   TweenAnimationBuilder(
-                                    tween: Tween(begin: 0.0,end:0.58),
+                                    tween: Tween(begin: 0.0, end: 0.58),
                                     duration: Duration(seconds: 1),
-                                    builder: (context,value,child){
-                                      int percentage = (value*100).ceil();
+                                    builder: (context, value, child) {
+                                      int percentage = (value * 100).ceil();
                                       return Container(
-                                        alignment: Alignment.center,
-                                        padding: EdgeInsets.all(10),
                                         height: 130,
-                                        width: 120,
+                                        width: 115,
                                         decoration: BoxDecoration(
-                                          shape: BoxShape.circle,
+                                            shape: BoxShape.circle,
+                                            color: Colors.white
                                         ),
-                                        child: Stack(
-                                          children: [
-                                            ShaderMask(
-                                              shaderCallback: (rect){
-                                                return SweepGradient(
-                                                    startAngle: 0.1,
-                                                    endAngle: 3.14*2,
-                                                    stops: [value,value],
-                                                    center: Alignment.center,
-                                                    colors: [Colors.white,Colors.transparent]
-                                                ).createShader(rect);
-                                              },
-                                              child: Container(
-                                                width: 100,
-                                                height: 200,
-                                                decoration: BoxDecoration(
-                                                    shape: BoxShape.circle,
-                                                    color: Colors.white
+                                        child: Container(
+                                          alignment: Alignment.center,
+                                          padding: EdgeInsets.all(10),
+                                          height: 130,
+                                          width: 120,
+                                          decoration: BoxDecoration(
+                                            shape: BoxShape.circle,
+                                          ),
+                                          child: Stack(
+                                            children: [
+                                              ShaderMask(
+                                                shaderCallback: (rect) {
+                                                  return SweepGradient(
+                                                      startAngle: 0.1,
+                                                      endAngle: 3.14 * 2,
+                                                      stops: [value, value],
+                                                      center: Alignment.center,
+                                                      colors: [
+                                                        Colors.white,
+                                                        Colors.transparent
+                                                      ]).createShader(rect);
+                                                },
+                                                child: Container(
+                                                  width: 100,
+                                                  height: 200,
+                                                  decoration: BoxDecoration(
+                                                      shape: BoxShape.circle, color: tealColor),
                                                 ),
                                               ),
-                                            ),
-                                            Center(
-                                              child: Container(
-                                                width: 80,
-                                                height: 100,
-                                                decoration: BoxDecoration(
-                                                    shape: BoxShape.circle,
-                                                    color: Colors.teal
+                                              Center(
+                                                child: Container(
+                                                  width: 80,
+                                                  height: 100,
+                                                  decoration: BoxDecoration(
+                                                      shape: BoxShape.circle, color: whiteColor),
                                                 ),
                                               ),
-                                            ),
-                                            Center(
-                                              child: Container(
-                                                width: 70,
-                                                height: 70,
-                                                decoration: BoxDecoration(
-                                                    shape: BoxShape.circle,
-                                                    color: Colors.white
-                                                ),
-                                                child: Center(
-                                                  child: Text("$percentage%",style: TextStyle(fontSize: 20,color: Colors.orange),),
+                                              Center(
+                                                child: Container(
+                                                  width: 70,
+                                                  height: 70,
+                                                  decoration: BoxDecoration(
+                                                      shape: BoxShape.circle, color: tealColor),
+                                                  child: Center(
+                                                    child: Text(
+                                                      "$percentage%",
+                                                      style: TextStyle(
+                                                          fontSize: 20, color: whiteColor),
+                                                    ),
+                                                  ),
                                                 ),
                                               ),
-                                            ),
-                                          ],
+                                            ],
+                                          ),
                                         ),
                                       );
                                     },
-                                  )
+                                  ),
                                 ],
                               ),
                               Center(

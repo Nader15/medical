@@ -21,7 +21,7 @@ class DonateWidget extends StatelessWidget {
                     opacity: 0.5,
                     child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.teal,
+                          color: tealColor,
                         )),
                   ),
                   Opacity(
@@ -150,13 +150,13 @@ class DonateWidget extends StatelessWidget {
                                   Text(
                                     "Reached",
                                     style: TextStyle(
-                                        color: Colors.orange.shade700,
+                                        color: orangeColor,
                                         fontWeight: FontWeight.bold),
                                   ),
                                   Text(
                                     "\$ 11,600",
                                     style: TextStyle(
-                                        color: Colors.orange.shade700,
+                                        color: orangeColor,
                                         fontSize: 25,
                                         fontWeight: FontWeight.bold),
                                   ),
@@ -168,13 +168,13 @@ class DonateWidget extends StatelessWidget {
                                   Text(
                                     "Remaining",
                                     style: TextStyle(
-                                        color: Colors.orange.shade700,
+                                        color: orangeColor,
                                         fontWeight: FontWeight.bold),
                                   ),
                                   Text(
                                     "\$ 8,400",
                                     style: TextStyle(
-                                        color: Colors.orange.shade700,
+                                        color: orangeColor,
                                         fontSize: 25,
                                         fontWeight: FontWeight.bold),
                                   ),
@@ -284,7 +284,7 @@ class DonateWidget extends StatelessWidget {
                                 width: 100,
                                 height: 200,
                                 decoration: BoxDecoration(
-                                    shape: BoxShape.circle, color: Colors.teal),
+                                    shape: BoxShape.circle, color: tealColor),
                               ),
                             ),
                             Center(
@@ -300,7 +300,7 @@ class DonateWidget extends StatelessWidget {
                                 width: 70,
                                 height: 70,
                                 decoration: BoxDecoration(
-                                    shape: BoxShape.circle, color: Colors.teal),
+                                    shape: BoxShape.circle, color: tealColor),
                                 child: Center(
                                   child: Text(
                                     "$percentage%",
