@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:medical/utils/colors_file.dart';
 import 'package:medical/utils/custom_widgets/cases_widget.dart';
+import 'package:medical/utils/custom_widgets/events.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -28,9 +29,7 @@ class _HomePageState extends State<HomePage> {
 
   final items=[
     Cases(),
-    Center(
-      child: Text("Events"),
-    ),
+    Events(),
     Center(
       child: Text("MuslimDo"),
     ),

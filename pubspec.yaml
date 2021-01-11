@@ -35,19 +35,4 @@ flutter:
   uses-material-design: true
 
   assets:
-    - images/search1.svg
-    - images/search2.svg
-    - images/eventsIcon1.svg
-    - images/eventsIcon2.svg
-    - images/DirectoruIcon1.svg
-    - images/DirectoruIcon2.svg
-    - images/MoreIcon1.svg
-    - images/MoreIcon2.svg
-    - images/HomeIcon1.svg
-    - images/HomeIcon2.svg
-    - images/equalizerIcon.svg
-    - images/megaphone.svg
-    - images/heart.svg
-    - images/alarm.svg
-    - images/patient.jpg
-    - images/annoncements.jpg
+    - images/

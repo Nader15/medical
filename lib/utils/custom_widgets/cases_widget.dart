@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'file:///C:/Users/nader/AndroidStudioProjects/GitHub/medical/lib/utils/ui/donate_screen.dart';
+import 'package:medical/ui/donate_screen.dart';
 import 'package:medical/utils/colors_file.dart';
 
 import 'package:medical/utils/navigator.dart';

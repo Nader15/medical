@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'file:///C:/Users/nader/AndroidStudioProjects/GitHub/medical/lib/utils/ui/home_page.dart';
 import 'package:medical/utils/colors_file.dart';
 import 'package:medical/utils/custom_widgets/donate_widget.dart';
+
+import 'home_page.dart';
 
 class DonateScreen extends StatefulWidget {
 

@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:medical/ui/donate_screen.dart';
 import 'package:medical/utils/colors_file.dart';
-import 'package:medical/utils/custom_widgets/cases_widget.dart';
 import 'package:medical/utils/navigator.dart';
-import 'package:medical/utils/ui/donate_screen.dart';
 
 class Announcements extends StatelessWidget {
   @override
